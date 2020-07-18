@@ -1,0 +1,382 @@
+@import "reset.css";
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Asap', sans-serif;
+}
+.wrapper{
+    max-width: 1170px;
+    margin: auto;
+}
+%button-white{
+    box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+%button-transparent{
+    border: 1px solid #4d4d4d;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.96px;
+    padding: 20px 48px;
+    text-decoration: none;
+}
+%h2{
+    color: #717171;
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.52px;
+}
+                // Секция header
+header{
+    background-image: url(../img/background-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-head-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    ul{
+        display: flex;
+    }
+    a{
+        text-decoration: none;
+        color: #4d4d4d;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-left: 35px;
+    }
+    a:hover{
+        color: floralwhite;
+        border-bottom: 2px solid floralwhite;
+        transition: 300ms;
+    }
+}
+h1{
+    color: #4d4d4d;
+    font-size: 90px;
+    font-weight: 500;
+    margin-top: 175px;
+    margin-bottom: 2px;
+}
+.span__header{
+   color: #909090;
+   font-size: 22px;
+   font-weight: 500;
+   display: inline-block;
+   margin-bottom: 50px;
+}
+.button__link-header{
+    padding-bottom: 390px;
+}
+.button__link-header a:nth-child(1){
+   @extend %button-white;
+   margin-right: 100px;
+}
+.button__link-header a:nth-child(2){
+  @extend %button-transparent;
+}
+                // Секция know-more
+.know-more{
+    h2{
+        @extend %h2;
+        line-height: 67px;
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    img{
+        padding-top: 170px;
+    }
+    p{
+        color: #4d4d4d;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 470px;
+        margin-bottom: 55px;
+    }
+    a{
+        @extend %button-transparent;
+    }
+    .content__know-more-wrap{
+        display: flex;
+        width: 100%;
+    }
+    .content__know-more-1{
+        margin-right: 130px;
+    }
+    .content__know-more-2{
+        img{
+            padding-bottom: 125px;
+        }
+    }
+}
+                // Секция SERVICES
+.SERVICES{
+    background-color: #f6f6f6;
+    .wrap-title{
+        h2{
+            @extend %h2;
+           display: flex;
+           justify-content: center;
+           padding-top: 120px;
+           margin-bottom: 60px;
+        }
+    }  
+    h4{
+        color: #4d4d4d;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 20px;
+        max-width: 157px;
+       text-align: center;
+       margin-top: 13px;
+    } 
+}
+.services-img-1{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 82px;
+    text-align: center;
+}
+.services-img-2{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 115px;
+    text-align: center;
+}
+                // Секция my__skils
+.my__skils{
+    h2{
+        @extend %h2;
+        padding-top: 117px;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+    }
+    img{
+       padding-left: 90px;
+       padding-bottom: 125px;
+    }
+}
+                // Секция Portfolio
+.portfolio{
+    h2{
+        @extend %h2;
+        display: flex;
+        justify-content: center;
+        padding-top: 125px;
+        margin-bottom: 45px;
+    }
+    background-color: #f6f6f6;
+    .portfolio_img1{
+        margin-bottom: 25px;
+        img:nth-child(2){
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+    }
+    .portfolio_img2{
+        img:nth-child(2){
+            margin-right: 25px;
+            margin-left: 25px;
+        }
+        padding-bottom: 48px;
+    }
+    a{
+        @extend %button-white; 
+        display: flex;
+        justify-content: center;
+        width: 190px;
+        margin: auto;
+    }
+}
+.portfolio_img2-wrap{
+    padding-bottom: 125px;
+}
+                // Секция TESTIMONIALS
+.TESTIMONIALS{
+    padding-bottom: 122px;
+    h2{
+        @extend %h2;
+        display: flex;
+        justify-content: center;
+        padding: 125px 0 57px 0;
+    }
+}
+.wrapper__div_test{
+    max-width: 955px;
+    max-height: 349px;
+    border: 1px solid #212121;
+    display: flex;
+    padding-top: 82px;
+    padding-left: 121px;
+    img{
+        margin-right: 31px;
+        padding-bottom: 108px;
+    }
+    h3{
+        color: #373737;
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    span{
+        opacity: 0.9;
+        color: #212121;
+        font-size: 12px;
+        text-transform: uppercase;
+
+    }
+    p{
+        opacity: 0.6;
+        color: #212121;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        max-width: 570px;
+        margin-top: 20px;
+    }
+}
+
+                // Секция item
+.item{
+    background-color: #f6f6f6;
+    .wrap__item{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 65px;
+    }
+    img{
+        padding-bottom: 31px;
+        padding-left: 35px;
+    }
+    p{
+        color: #4c4c4c;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    span{
+       display: flex;
+       justify-content: center;
+       font-size: 30px;
+       font-weight: 500;
+       padding-bottom: 15px;
+    }
+    .item__item1{
+        padding-top: 52px;
+    }
+    .item__item2{
+        padding-top: 52px + 21px;
+    }
+    .item__item3{
+        padding-top: 72px;
+    }
+    .item__item4{
+        padding-top: 69px;
+    }
+    .img-item-item-3{
+        padding-left: 65px;
+    }
+}
+                // Секция sAY HELLO!
+.SAY-HELLO{
+    padding-top: 155px;
+    background-image: url(../img/contact_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2{
+        @extend %h2;
+        text-align: center;
+        color: #efeff0;
+        letter-spacing: 5.52px;
+        padding-bottom: 70px;
+    }
+    .form-contact-say-hellow{
+      padding-bottom: 50px;  
+    }
+    .flex-input{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .form-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    textarea{
+        width: 768px;
+       height: 207px;
+       padding-top: 25px;
+       padding-left: 10px;
+       opacity: 0.8;
+        color: #212121;
+        font-size: 16px;
+        letter-spacing: 0.96px;
+    }
+    input{
+        opacity: 0.8;
+        color: #212121;
+        font-size: 16px;
+        letter-spacing: 0.96px;
+        width: 370px;
+        height: 57px;
+    }
+    input:nth-child(1){
+        margin-right: 15px;
+    }
+    input:nth-child(2){
+        margin-left: 15px;
+    }
+    a{
+        color: #4d4d4d;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.96px;
+        box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        padding: 20px 30px;
+        text-decoration: none;
+        span{
+            background: url(../img/ico/arrow.png) right;
+            background-repeat: no-repeat;
+            padding-right: 20px;
+        }
+    }
+    .button-hellow-wrap{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+} 
+.line-hellow{
+    background: url(../img/ico/hr.svg);
+    width: 1170px;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 26px;
+} 
+.socsety{
+    display: flex;
+    padding-bottom: 30px;
+    img{
+        margin-right: 8px;
+    }
+    span{
+        color: #ffffff;
+        font-size: 16px;
+        letter-spacing: 0.96px;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 273px;
+     }
+}            
